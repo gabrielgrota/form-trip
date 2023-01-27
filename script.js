@@ -3,8 +3,8 @@ document.getElementById("todayDate").innerHTML = `<h5>${date}</h5>`;
 
 // first select
 function update1(id){
-    var select1 = document.getElementById("flyingFrom");
-    var value1 = select1.options[select1.selectedIndex].value;
+    let select1 = document.getElementById("flyingFrom");
+    let value1 = select1.options[select1.selectedIndex].value;
     console.log(value1);
 
     switch (value1) {
@@ -70,8 +70,8 @@ function update1(id){
 
 // second select
 function update2(id){
-    var select2 = document.getElementById("flyingTo");
-    var value2 = select2.options[select2.selectedIndex].value;
+    let select2 = document.getElementById("flyingTo");
+    let value2 = select2.options[select2.selectedIndex].value;
     console.log(value2);
 
     switch (value2) {
@@ -141,7 +141,7 @@ function multiCityOption() {
     console.log(selected);
 
     if (selected === 'multiCity') {
-        document.getElementById("multiCityFlecha").innerHTML = `<div class="flecha"><img class="flecha" src="images/flecha.png" alt="Flecha" /></div>`;
+        document.getElementById("multiCityArrow").innerHTML = `<div class="arrow"><img class="arrow" src="images/arrow.png" alt="Arrow" /></div>`;
         document.getElementById("multiCitySelected").innerHTML = `
         <div class="local-date">
             <div class="local">
