@@ -1,0 +1,141 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 12px;
+}
+
+.initial {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 2px;
+}
+
+.initial img {
+  width: 3.7rem;
+  height: auto;
+  padding: 4px;
+}
+
+.initial h4 {
+  margin-left: 0.9%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  margin-right: 2.5%
+}
+
+.itinerary {
+  margin-left: 8%;
+}
+
+.airport {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.local img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.airport p {
+  font-size: 13px;
+}
+
+#flyingFromSpan img,
+#flyingToSpan img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.flecha img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 22%;
+}
+
+.headerDate {
+  display: flex;
+  align-items: center;
+}
+
+.headerDate img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.type{
+  display: flex;
+  align-items: center;
+}
+
+.type form {
+  margin-left: 20px;
+}
+
+.type2 {
+  display: flex;
+  align-items: center;
+}
+
+.type2 p {
+  padding-left: 8px;
+}
+
+.type2 img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.flying {
+  padding-top: 3%;
+  display: flex;
+}
+
+.flyingFrom,
+.flyingTo,
+.flyingMultiCity {
+  margin-top: 10%;
+}
+
+.flying1,
+.flying2 {
+  display: grid;
+  margin-right: 2%;
+}
+
+.date {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: inline-grid;
+}
+
+
+.local {
+  margin: 0 20px;
+  background-color: rgb(230, 230, 230);
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.header-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  width: 200px;
+}
+
+.github {
+  margin-left: 20px;
+}

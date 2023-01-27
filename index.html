@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trip From</title>
+  </head>
+  <body>
+    <div class="initial">
+      <div class="header-date">
+        <div class="header">
+          <img src="images/around-the-world.png" alt="airplane" />
+          <h1 contenteditable="">Trip 018</h1>
+        </div>
+        <div class="headerDate">
+          <img src="images/datas.png" alt="" />
+          <span id="todayDate"></span>
+          <a class="github" href="https://github.com/gabrielgrota" target="_blank">
+            <img src="images/github.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+      <h4>To continue your itinerary, enter your trip info</h4>
+    </div>
+
+    <div class="itinerary">
+
+      <div class="type">
+        <div class="type2">
+          <img src="images/type.png" alt="" />
+          <p>What type of route is it?</p>
+        </div>
+
+        <form>
+          <input type="radio" name="opcao" id="routeType" value="roundTrip" onchange="multiCityOption()" checked />
+          <label for="Roundtrip">Roundtrip International</label>
+
+          <input type="radio" name="opcao" id="routeType" value="multiCity" onchange="multiCityOption()" />
+          <label for="Multi-city">Multi-city International</label>
+        </form>
+      </div>
+      
+      <div>
+        <div class="airport">
+          <div local-date>
+            <!-- First city: select, info and date -->
+            <div class="local">
+              <!-- Select -->
+              <div class="flying">
+                <select name="flyingFrom" id="flyingFrom" onchange="update1('flyingFromSpan')">
+                  <option value="0" selected>Choose a city</option>
+                  <option value="ARG">Buenos Aires, Argentina</option>
+                  <option value="AUS">Sydney, Australia</option>
+                  <option value="AUT">Vienna, Austria</option>
+                  <option value="BEL">Brussels, Belgium</option>
+                  <option value="BOL">Santa Cruz de la Sierra, Bolivia</option>
+                  <option value="BRA">São Paulo, Brazil</option>
+                  <option value="BWA">Gaborone, Botswana</option>
+                  <option value="CAN">Ontario, Canada</option>
+                  <option value="CHL">Santiago, Chile</option>
+                  <option value="CHN">Beijing, China</option>
+                  <option value="CYM">George Town, Cayman Islands</option>
+                  <option value="CZE">Prague, Czech Republic</option>
+                  <option value="ENG">London, England, UK</option>
+                  <option value="IDN">Jakarta, Indonesia</option>
+                  <option value="JPN">Narita, Japan</option>
+                  <option value="KOR">Jung District, South Korea</option>
+                  <option value="NZL">Auckland, New Zealand</option>
+                  <option value="SWE">Stockholm, Sweden</option>
+                  <option value="USA">New York, U.S</option>
+                </select>
+              </div>
+              <!-- Info do país selecionado aqui -->
+              <div class="flyingFrom">
+                <span id="flyingFromSpan"></span>
+              </div>
+            </div>
+          
+            <!-- Date Info -->
+            <div class="date">
+              <div class="date1">
+                <label for="test">Departure date</label>
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2021-10-28"
+                  min="2023-01-24"
+                  max="2030-12-31"
+                />
+              </div>
+            </div>  
+          </div>
+
+
+          <div class="flecha">
+            <img class="flecha" src="images/flecha.png" alt="Flecha" />
+          </div>
+
+
+          <div class="local-date">
+            <div class="local">
+              <div class="flying">
+                <select name="flyingTo" id="flyingTo" onchange="update2('flyingToSpan')">
+                  <option value="0" selected>Choose a city</option>
+                  <option value="ARG">Buenos Aires, Argentina</option>
+                  <option value="AUS">Sydney, Australia</option>
+                  <option value="AUT">Vienna, Austria</option>
+                  <option value="BEL">Brussels, Belgium</option>
+                  <option value="BOL">Santa Cruz de la Sierra, Bolivia</option>
+                  <option value="BRA">São Paulo, Brazil</option>
+                  <option value="BWA">Gaborone, Botswana</option>
+                  <option value="CAN">Ontario, Canada</option>
+                  <option value="CHL">Santiago, Chile</option>
+                  <option value="CHN">Beijing, China</option>
+                  <option value="CYM">George Town, Cayman Islands</option>
+                  <option value="CZE">Prague, Czech Republic</option>
+                  <option value="ENG">London, England, UK</option>
+                  <option value="IDN">Jakarta, Indonesia</option>
+                  <option value="JPN">Narita, Japan</option>
+                  <option value="KOR">Jung District, South Korea</option>
+                  <option value="NZL">Auckland, New Zealand</option>
+                  <option value="SWE">Stockholm, Sweden</option>
+                  <option value="USA">New York, U.S</option>
+                </select>
+              </div>
+              <!--info do país selecionado aqui-->
+              <div class="flyingTo">
+                <span id="flyingToSpan"></span>
+              </div>
+            </div>
+
+            <!-- Date Info -->
+            <div class="date">
+              <div class="date2">
+                <label for="test">Departure date</label>
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2021-10-28"
+                  min="2023-01-24"
+                  max="2030-12-31"
+                />
+              </div>
+            </div>  
+          </div>
+
+          <div class="flecha">
+            <span id="multiCityFlecha"></span>
+          </div>
+          
+          <!-- Multicity selected -->
+          <span id="multiCitySelected" onchange="update3('flyingMultiCityData')"></span>
+        </div>
+      </div>
+
+      <!-- Button Save (ver idea.md)
+      <div>
+        <button type="submit">Save</button>
+      </div> -->
+    </div>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
