@@ -55,28 +55,7 @@
             <div class="local">
               <!-- Select -->
               <div class="flying">
-                <select name="flyingFrom" id="flyingFrom" onchange="update1('flyingFromSpan')">
-                  <option value="0" selected>Choose a city</option>
-                  <option value="ARG">Buenos Aires, Argentina</option>
-                  <option value="AUS">Sydney, Australia</option>
-                  <option value="AUT">Vienna, Austria</option>
-                  <option value="BEL">Brussels, Belgium</option>
-                  <option value="BOL">Santa Cruz de la Sierra, Bolivia</option>
-                  <option value="BRA">São Paulo, Brazil</option>
-                  <option value="BWA">Gaborone, Botswana</option>
-                  <option value="CAN">Ontario, Canada</option>
-                  <option value="CHL">Santiago, Chile</option>
-                  <option value="CHN">Beijing, China</option>
-                  <option value="CYM">George Town, Cayman Islands</option>
-                  <option value="CZE">Prague, Czech Republic</option>
-                  <option value="ENG">London, England, UK</option>
-                  <option value="IDN">Jakarta, Indonesia</option>
-                  <option value="JPN">Narita, Japan</option>
-                  <option value="KOR">Jung District, South Korea</option>
-                  <option value="NZL">Auckland, New Zealand</option>
-                  <option value="SWE">Stockholm, Sweden</option>
-                  <option value="USA">New York, U.S</option>
-                </select>
+                <select name="flyingFrom" id="flyingFrom" onchange="update('flyingFrom', 'flyingFromSpan')"></select>
               </div>
               <!-- Selected country info here -->
               <div class="flyingFrom">
@@ -109,28 +88,7 @@
           <div class="local-date">
             <div class="local">
               <div class="flying">
-                <select name="flyingTo" id="flyingTo" onchange="update2('flyingToSpan')">
-                  <option value="0" selected>Choose a city</option>
-                  <option value="ARG">Buenos Aires, Argentina</option>
-                  <option value="AUS">Sydney, Australia</option>
-                  <option value="AUT">Vienna, Austria</option>
-                  <option value="BEL">Brussels, Belgium</option>
-                  <option value="BOL">Santa Cruz de la Sierra, Bolivia</option>
-                  <option value="BRA">São Paulo, Brazil</option>
-                  <option value="BWA">Gaborone, Botswana</option>
-                  <option value="CAN">Ontario, Canada</option>
-                  <option value="CHL">Santiago, Chile</option>
-                  <option value="CHN">Beijing, China</option>
-                  <option value="CYM">George Town, Cayman Islands</option>
-                  <option value="CZE">Prague, Czech Republic</option>
-                  <option value="ENG">London, England, UK</option>
-                  <option value="IDN">Jakarta, Indonesia</option>
-                  <option value="JPN">Narita, Japan</option>
-                  <option value="KOR">Jung District, South Korea</option>
-                  <option value="NZL">Auckland, New Zealand</option>
-                  <option value="SWE">Stockholm, Sweden</option>
-                  <option value="USA">New York, U.S</option>
-                </select>
+                <select name="flyingTo" id="flyingTo" onchange="update('flyingTo', 'flyingToSpan')"></select>
               </div>
               <!-- Selected country info here -->
               <div class="flyingTo">
@@ -159,7 +117,7 @@
           </div>
           
           <!-- Multicity selected -->
-          <span id="multiCitySelected" onchange="update3('flyingMultiCityData')"></span>
+          <span id="multiCitySelected" onchange="update('flyingMultiCity', 'flyingMultiCitySpan')"></span>
         </div>
       </div>
 
