@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="theme/theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,6 +27,10 @@
           <a class="github" href="https://github.com/gabrielgrota" target="_blank">
             <img src="images/github.png" alt="GitHub">
           </a>
+          <div class="toggle">
+            <input id="switch" type="checkbox" name="theme">
+            <label for="switch">Toggle</label>
+          </div>
         </div>
       </div>
       <h4>To continue your itinerary, enter your trip info</h4>
@@ -126,7 +131,9 @@
         <button type="submit">Save</button>
       </div> -->
     </div>
+    
     <script src="countries.js"></script>
     <script src="script.js"></script>
+    <script src="theme/theme.js"></script>
   </body>
 </html>
