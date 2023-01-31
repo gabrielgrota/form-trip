@@ -7,12 +7,14 @@ const initialColors = {
     // pegar estilo do css
     bg: getStyle(html, "--bg"),
     colorText: getStyle(html, "--color-text"),
+    bgLocal: getStyle(html, "--bg-local"),
     filterImg: getStyle(html, "--filter-img")
 }
 
 const darkMode = {
-    bg: "black",
+    bg: "#212121",
     colorText: "white",
+    bgLocal: "rgb(75 75 75)",
     filterImg: "invert(100%)"
 }
 

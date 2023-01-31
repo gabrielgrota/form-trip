@@ -1,7 +1,8 @@
 html {
     --bg: white;
-    --color-text: black;
-    --color-headings: grey;
+    --color-text: #212529;
+    --bg-local: #dae0e6;
+    --color-headings: #949494;
     --filter-img: invert(0%);
 }
 
@@ -11,11 +12,17 @@ body {
 }
 
 .initial img, 
-.arrow img {
+.arrow img,
+.type img,
+.github img {
     filter: var(--filter-img);
 }
 
-
+.toggle {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
 
 .toggle input[type=checkbox]{
     height: 0;
@@ -24,7 +31,6 @@ body {
 }
 
 .toggle label {
-    margin-left: 12px;
     cursor: pointer;
     text-indent: -9999px;
     width: 52px;

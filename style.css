@@ -1,5 +1,5 @@
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 }
 
 .airport p {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #flyingFromSpan img,
@@ -119,12 +119,20 @@ body {
   display: inline-grid;
 }
 
+#start {
+  border-width: 1px;
+  border-radius: 40px;
+}
+
+select {
+  border-radius: 20px;
+}
 
 .local {
   margin: 0 20px;
-  /* background-color: var(--color-headings); */
+  background-color: var(--bg-local);
   padding: 12px;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .header-date {
@@ -133,9 +141,27 @@ body {
 }
 
 .header h1 {
-  width: 200px;
+  width: 300px;
 }
 
 .github {
-  margin-left: 20px;
+  margin-left: 12px;
+}
+
+.github img {
+  width: 1.7rem;
+  height: 1.7rem;
+  transition: transform .4s; /* Animation */
+}
+
+.github img:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  height: 35px;
+  position: fixed;
+  width: 100%;
 }
