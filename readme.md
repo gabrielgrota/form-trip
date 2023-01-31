@@ -1,6 +1,6 @@
 # Projeto de site de planejamento de viagens.
 
-:br: Algumas funcionalildades:
+🇧🇷 Algumas funcionalildades:
 Pode editar o título da página clicando sobre ele.
 Você deve escolher se quer apenas uma rota (roundtrip) ou uma viagem entre dois países (multi-city).
 Caso seja multi-city ele abrirá mais uma caixa para selecionar a cidade e país desejado.
