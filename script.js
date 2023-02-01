@@ -42,41 +42,25 @@ function update(id, spanID) {
     document.getElementById(spanID).innerHTML = `<img src='${selectFilter[0].flag}'> <h3>${selectFilter[0].airportCode}</h3> <p>${selectFilter[0].airportName}</p> <p>${selectFilter[0].city}</p>`;
 };
 
-// multicity? yes. then...
-function multiCityOption() {
-    const selected = document.querySelector('input[name="opcao"]:checked').value;
-    console.log(selected);
 
-    if (selected === 'multiCity') {
-        document.getElementById("multiCityArrow").innerHTML = `<div class="arrow"><img class="arrow" src="images/arrow.png" alt="Arrow" /></div>`;
-        document.getElementById("multiCitySelected").innerHTML = `
-        <div class="local-date">
-            <div class="local">
-                <div class="flying">
-                    <select name="flyingMultiCity" id="flyingMultiCity" onchange="update('flyingMultiCity', 'flyingMultiCitySpan')"></select>
-                </div>
+// multicity? yes. then... event click button
+const routeType = document.querySelector(".type");
+const multiCityBtn = document.querySelector("#multi-city");
+multiCityBtn.addEventListener("click", (e) => {
+  document.getElementById("multiCityArrow").innerHTML = `<div class="arrow"><img class="arrow" src="images/arrow.png" alt="Arrow" /></div>`;
+  document.getElementById("multiCitySelected").innerHTML = `
+    <div class="local">
+                
+      <div class="select-input"><select name="flyingMultiCity" id="flyingMultiCity" onchange="update('flyingMultiCity', 'flyingMultiCitySpan')"></select></div>
+                
+      <div class="airport-info"><span id="flyingMultiCitySpan"></span></div>
+          
+      <div class="date">
+        <label for="test">Departure date</label>
+        <input type="date" id="start" name="trip-start" value="2021-10-28" min="2023-01-24" max="2030-12-31"/>
+      </div>
 
-                <div class="flyingMultiCity">
-                    <span id="flyingMultiCitySpan"></span>
-                </div>
-            </div>
-
-            <!-- Date Info -->
-            <div class="date">
-              <div class="date3">
-                <label for="test">Departure date</label>
-                <input
-                  type="date"
-                  id="start"
-                  name="trip-start"
-                  value="2021-10-28"
-                  min="2023-01-24"
-                  max="2030-12-31"
-                />
-              </div>
-            </div>  
-        </div>`
-        optionLoop("#flyingMultiCity");
-    }
-};
-multiCityOption();
+    </div>`
+  optionLoop("#flyingMultiCity");
+  routeType.style.display = "none";
+});

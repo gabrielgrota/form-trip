@@ -36,7 +36,7 @@ const countries = [
         flag: 'flags/bol.png',
         airportCode: 'VVI',
         airportName: 'Viru Viru Airport',
-        city: 'Santa Cruz de la Sierra, Bolivia'
+        city: 'St. Cruz de la Sierra, Bolivia'
     },
     {
         country: 'bra',
