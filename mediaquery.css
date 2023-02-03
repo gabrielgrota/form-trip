@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px) {
+    .data {
+        display: none;
+    }
+
+    .itinerary-form {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .select-input select,
+    #start,
+    #multi-city {
+        padding: 5px;
+    }
+
+    .arrow img {
+        transform: rotate(90deg);
+    }
+}
