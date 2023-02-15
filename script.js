@@ -39,7 +39,22 @@ function update(id, spanID) {
     console.log(selectFilter[0].city);
 
     // formats the object returned in span, country info
-    document.getElementById(spanID).innerHTML = `<img src='${selectFilter[0].flag}'> <h3>${selectFilter[0].airportCode}</h3> <p>${selectFilter[0].airportName}</p> <p>${selectFilter[0].city}</p>`;
+    document.getElementById(spanID).innerHTML = `
+    <div class="flex code">
+    <img src='${selectFilter[0].flag}'> 
+    <h2>${selectFilter[0].airportCode}</h2> 
+    </div>
+    
+    <div class="flex airport-city">
+    <img src='images/plane.png'>
+    <p>${selectFilter[0].airportName}</p> 
+    </div>
+
+    <div class="flex airport-city">
+    <img src='images/city.png'>
+    <p>${selectFilter[0].city}</p>
+    </div>
+    `;
 };
 
 
@@ -50,7 +65,10 @@ multiCityBtn.addEventListener("click", (e) => {
   document.getElementById("multiCityArrow").innerHTML = `<div class="arrow"><img class="arrow" src="images/arrow.png" alt="Arrow" /></div>`;
   document.getElementById("multiCitySelected").innerHTML = `
     <div class="local">
-                
+      <div class="flex local-info">
+        <img src="images/point.png">
+        <p>2nd destiny</p>
+      </div>
       <div class="select-input"><select name="flyingMultiCity" id="flyingMultiCity" onchange="update('flyingMultiCity', 'flyingMultiCitySpan')"></select></div>
                 
       <div class="airport-info"><span id="flyingMultiCitySpan"></span></div>

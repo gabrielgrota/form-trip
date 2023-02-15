@@ -35,14 +35,17 @@
     <div class="itinerary">
 
       <h4>To continue your itinerary, enter your trip info</h4>
-      
+
       <div class="itinerary-form">
 
         <!-- First select -->
         <div class="local">
-
+          <div class="flex local-info">
+            <img src="images/circle.png">
+            <p>origin</p>
+          </div>
+          
           <div class="select-input"><select name="flyingFrom" id="flyingFrom" onchange="update('flyingFrom', 'flyingFromSpan')"></select></div>
-              
           <div class="airport-info"><span id="flyingFromSpan"></span></div>
               
           <div class="date">
@@ -54,11 +57,15 @@
           
         <div class="arrow">
           <img class="arrow" src="images/arrow.png" alt="Arrow" />
+          <span id="time"></span>
         </div>
 
         <!-- Second select -->
         <div class="local">
-              
+          <div class="flex local-info">
+            <img src="images/point.png">
+            <p>destiny</p>
+          </div>
           <div class="select-input"><select name="flyingTo" id="flyingTo" onchange="update('flyingTo', 'flyingToSpan')"></select></div>
               
           <div class="airport-info"><span id="flyingToSpan"></span></div>
@@ -88,12 +95,12 @@
         
       </div>
     </div>
+    <div>
+      <a class="github" href="https://github.com/gabrielgrota" target="_blank">
+        <img src="images/github.png" alt="GitHub">
+      </a>
+    </div>
   </body>
-  <footer>
-    <a class="github" href="https://github.com/gabrielgrota" target="_blank">
-      <img src="images/github.png" alt="GitHub">
-    </a>
-  </footer>
   <script src="countries.js"></script>
   <script src="script.js"></script>
   <script src="theme/theme.js"></script>

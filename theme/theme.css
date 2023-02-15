@@ -1,7 +1,7 @@
 html {
     --bg: white;
     --color-text: #212529;
-    --bg-local: #dae0e6;
+    --bg-local: #e9ecef;
     --color-headings: #949494;
     --filter-img: invert(0%);
 }
@@ -14,7 +14,9 @@ body {
 .header img, 
 .arrow img,
 .type img,
-.github img {
+.github img,
+.airport-city img,
+.local-info img {
     filter: var(--filter-img);
 }
 

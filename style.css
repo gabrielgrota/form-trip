@@ -7,6 +7,7 @@
 .flex {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -79,9 +80,9 @@
   padding-bottom: 18px;
 } 
 
-.airport-info h3, p {
+/* .airport-info p {
   margin-top: 20px;
-} 
+}  */
 
 .type { 
   display: inline; 
@@ -150,4 +151,28 @@ footer {
   height: 35px;
   position: fixed;
   width: 100%;
+}
+
+.airport-city img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.airport-city {
+  margin-top: 20px;
+}
+
+.local-info {
+  margin-bottom: 10px;
+  text-align: initial;
+  justify-content: initial;
+}
+
+.local-info p {
+  font-size: 12.5px;
+}
+
+.local-info img {
+  width: 0.8rem;
+  height: 0.8rem;
 }
